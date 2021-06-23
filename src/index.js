@@ -66,8 +66,9 @@ const Lottie = memo(({
     })
 
     function onDomLoaded() {
-      setReady(true)
-      onLoad()
+      setReady(true);
+      onLoad();
+      if(onSegmentStart != null) onSegmentStart();
     }
     animRef.current.addEventListener('DOMLoaded', onDomLoaded)
 
