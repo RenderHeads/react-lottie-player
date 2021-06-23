@@ -92,9 +92,10 @@ const Lottie = memo(({
     animRef.current.addEventListener('enterFrame', onEnterFrame)
   }, [onEnterFrame])
 
-  useEffect(() => {
-    animRef.current.addEventListener('segmentStart', onSegmentStart)
-  }, [onSegmentStart])
+  // onSegmentStart event not working on lottie-web
+  // useEffect(() => {
+  //   animRef.current.addEventListener('segmentStart', onSegmentStart)
+  // }, [onSegmentStart])
 
   useEffect(() => {
     if (!ready) return
