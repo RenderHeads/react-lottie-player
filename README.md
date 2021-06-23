@@ -11,7 +11,7 @@ Inspired by [several](https://github.com/felippenardi/lottie-react-web) [existin
 ## Install
 
 ```bash
-npm install --save react-lottie-player
+npm install --save RenderHeads/react-lottie-player
 ```
 
 ## Usage
